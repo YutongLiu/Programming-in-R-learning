@@ -1,0 +1,5 @@
+There are some common mistakes I made...
+
+### Backslash vs Slash
+/ : for pathname(Even in Windows)
+\ : an escape character
