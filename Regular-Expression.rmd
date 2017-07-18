@@ -18,7 +18,7 @@ N.B.
  [a-z]  [A-Z]  [0-9]              |Specify a range of letters or numbers;The order doesn't matter
  **^[^** B-D]                     |When used at the start of a character class in [], ^ indicates matching characters **NOT** 
  9**.**11                         |Refer to any character(but just one character!)
- *\\                              |*: **any number**, including none, of the item
+ *\                               |*: **any number**, including none, of the item
  **.**                            |One character
  ***\.**                          |Any number of characters
  **+**                            |+: **at least one** of the item
