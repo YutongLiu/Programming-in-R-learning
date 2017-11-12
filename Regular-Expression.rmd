@@ -12,8 +12,8 @@ N.B.
  
  Regular Expression               |Character Structure
  ---------------------------------|-------------------------------------------------------------------------
- **^**a                           |The **start** of the line is a
- a**$**                           |The **end** of the line is a
+ **^** a                          |The **start** of the line is a
+ a **$**                          |The **end** of the line is a
  **[**Aa**]**                     |List **a set of** characters we will accept at a given point in the match
  [a-z]  [A-Z]  [0-9]              |Specify a range of letters or numbers;The order doesn't matter
  **^[^** B-D]                     |When used at the start of a character class in [], ^ indicates matching characters **NOT** 
