@@ -12,23 +12,23 @@ N.B.
  
  Regular Expression               |Character Structure
  ---------------------------------|-------------------------------------------------------------------------
- **^** a                          |The **start** of the line is a
- a **$**                          |The **end** of the line is a
- **[**Aa**]**                     |List **a set of** characters we will accept at a given point in the match
+ ^a                               |The **start** of the line is a
+ a$                               |The **end** of the line is a
+ [Aa]                             |List **a set of** characters we will accept at a given point in the match
  [a-z]  [A-Z]  [0-9]              |Specify a range of letters or numbers;The order doesn't matter
- **^[^** B-D]                     |When used at the start of a character class in [], ^ indicates matching characters **NOT** 
- 9**.**11                         |Refer to any character(but just one character!)
+ ^[^ B-D]                         |When used at the start of a character class in [], ^ indicates matching characters **NOT** 
+ 9.11                             |Refer to any character(but just one character!)
  *\                               |*: **any number**, including none, of the item
- **.**                            |One character
- ***\.**                          |Any number of characters
- **+**                            |+: **at least one** of the item
+ .                                |One character
+ *\.                              |Any number of characters
+ +                                |+: **at least one** of the item
  [0-9]+(.*)[0-9]+                 |Find "at least a number, any number of characters, at least a number
  Flood\|fire\|hurricane           |means **or**; we can include any number of alternatives
  ^[Gg]ood\|[Bb]ad                 |find the string that begins with Good/good **or** contains Bad/bad
  ^([Gg]ood\|[Bb]ad)               |**()** :**constrains** the alternatives, find the string that begins with Good/good or Bad/bad
  [Gg]eorge([Ww]\\.)?[Bb]ush       |**?** : the indicated expression is **optional**, means the string can contain W./w. or not
  [Gg]eorge([Ww]\\.)?[Bb]ush       |**\\** : **escape** the metacharacter, treat the "." as a literal period(not \ as manual said)
- **{}**                           |Specify the **minimum and maximum number** of matches of an expression
+ {}                               |Specify the **minimum and maximum number** of matches of an expression
  {m,n}                            |At least m but not more than n macthes
  {m}                              |Exactly m matches
  {m,}                             |At least m matches
